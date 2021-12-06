@@ -1,0 +1,137 @@
+main{
+    display: inline;
+    align-items: center;}
+    
+    .section{
+    display: flex;
+    align-items: center;
+  }
+
+/*navbar*/
+nav{
+    background-color: black;
+    padding: 5px 20px;
+    border-bottom: 3px solid rgb(0, 221, 221);
+  }  
+  ul{
+    list-style-type: none;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+  }
+
+  .menu li a {
+    display: block;
+  }
+  .logo a{
+    font-size: 20px;
+  }
+
+  .button.secondary{
+    border-bottom: 1px #444 solid;
+  }
+
+
+
+  /*FOOTER*/
+
+  .row-1{
+    padding-left: 160px;
+  }
+  .btn-primary{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .divisor{
+    padding-left: 425px;
+  }
+
+  .container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+/*----------------------------------Mobile Navbar------------------------------------------*/
+  /*-----------------------------------------------------------------------------------------*/
+  /*-----------------------------------------------------------------------------------------*/
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle{
+  order:1;
+  }
+
+  .item.button{
+  order: 2;
+
+}
+.item{
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active{
+  display: block;
+}
+
+  .toggle{
+    cursor: pointer;
+  }
+
+  .bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+  .bars::before,.bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+  }
+  .bars::before{
+    top:5px;
+  }
+  .bars::after{
+    top: -5px;
+  }
